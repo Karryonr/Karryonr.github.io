@@ -17,7 +17,7 @@
 <meta property="og:description" content="一、PHP 定义 PHP（全称：PHP：Hypertext Preprocessor，即”PHP：超文本预处理器”）是一种通用开源脚本语言。  PHP 文件可包含文本、HTML、JavaScript代码和 PHP 代码  PHP 代码在服务器上执行，结果以纯 HTML 形式返回给浏览器  PHP 文件的默认文件扩展名是 “.php”">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-11-14T15:21:56.000Z">
-<meta property="article:modified_time" content="2020-11-15T09:10:05.885Z">
+<meta property="article:modified_time" content="2020-12-03T18:10:54.870Z">
 <meta property="article:author" content="Karryonr">
 <meta name="twitter:card" content="summary">
   
@@ -242,23 +242,23 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">&#x2F;&#x2F; PHP 代码</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
 <p>下面，是一个简单的 PHP 文件实例，它可以向浏览器输出文本 “Hello World!”：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt; !DOCTYPE html&gt;</span><br><span class="line">&lt; html&gt;</span><br><span class="line">&lt; body&gt;</span><br><span class="line"></span><br><span class="line">&lt; h1&gt;My first PHP page&lt; &#x2F;h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">echo &quot;Hello World!&quot;;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">&lt; &#x2F;body&gt;</span><br><span class="line">&lt; &#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt; !DOCTYPE html&gt;</span><br><span class="line">&lt; html&gt;</span><br><span class="line">&lt; body&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">echo &quot;Hello World!&quot;;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">&lt; &#x2F;body&gt;</span><br><span class="line">&lt; &#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
 <p>PHP 中的每个代码行都必须以<strong>分号</strong>结束。</p>
 <h2 id="三、PHP-中的注释"><a href="#三、PHP-中的注释" class="headerlink" title="三、PHP 中的注释"></a>三、PHP 中的注释</h2><p>单行注释 ：//和#                  多行注释      /*   */</p>
 <h2 id="四、PHP-变量规则："><a href="#四、PHP-变量规则：" class="headerlink" title="四、PHP 变量规则："></a>四、PHP 变量规则：</h2><ul>
-<li>变量以 $ 符号开始，后面跟着变量的名称  ($x)</li>
+<li>变量以 <strong>$</strong> 符号开始，后面跟着变量的名称  ($x)</li>
 <li>变量名必须以字母或者下划线字符开始</li>
 <li>变量名只能包含字母，数字字符以及下划线（A-z、0-9 和 _ ）</li>
-<li>变量名不能包含空格</li>
-<li>变量名是区分大小写的（$y 和 $Y 是两个不同的变量）</li>
+<li>变量名<strong>不能包含空格</strong></li>
+<li>变量名是<strong>区分大小写</strong>的（$y 和 $Y 是两个不同的变量）</li>
 <li>不必向 PHP 声明该变量的数据类型，PHP 会根据变量的值，自动把变量转换为正确的数据类型。</li>
 </ul>
 <h2 id="五、-PHP-变量作用域"><a href="#五、-PHP-变量作用域" class="headerlink" title="五、 PHP 变量作用域"></a>五、 PHP 变量作用域</h2><p>变量的作用域是脚本中变量可被使用的部分。</p>
 <p>PHP 有四种不同的变量作用域：</p>
 <ul>
 <li><p><strong>local  局部作用域</strong>  在 PHP 函数内部声明的变量是局部变量，仅能在函数内部访问。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test()</span><br><span class="line">&#123;</span><br><span class="line">    $a &#x3D; 15;</span><br><span class="line">    echo &quot;内部输出结果：$a” ;</span><br><span class="line">&#125;</span><br><span class="line">echo &quot;外部输出结果： $a&quot;   &#x2F;&#x2F; 无法访问变量 a</span><br><span class="line">echo PHP_EOL;</span><br><span class="line">test();</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">外部输出结果：</span><br><span class="line">内部输出结果：15</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test()</span><br><span class="line">&#123;</span><br><span class="line">    $a &#x3D; 15;</span><br><span class="line">    echo &quot;内部输出结果：”.$a ;</span><br><span class="line">&#125;</span><br><span class="line">echo &quot;外部输出结果：&quot;.$a;   &#x2F;&#x2F; 无法访问变量 a</span><br><span class="line">echo PHP_EOL;</span><br><span class="line">test();</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">外部输出结果：报错</span><br><span class="line">内部输出结果：15</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>global  全局作用域</strong>  在所有函数外部定义的变量是全局变量，除了函数外，全局变量可以被脚本中的任何部分访问、要在一个函数中访问一个全局变量，需要使用 global 关键字。</p>
 <p>PHP 将所有的全局变量存储在一个名为 <strong>$GLOBALS[index]</strong> 的数组里，<strong>index</strong> 保存变量的名称。</p>
@@ -273,64 +273,32 @@
 </ul>
 <ul>
 <li><p><strong>static  静态作用域</strong>  当一个函数执行完成时，它的所有变量通常都会被删除。</p>
-<p>然而，有时需要局部变量不要被删除，要做到这一点，请在您第一次声明变量时使用 static 关键字。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test() &#123;</span><br><span class="line">    static $x&#x3D;0;</span><br><span class="line">    echo $x . &quot; &quot;;</span><br><span class="line">    $x++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">结果：0 1 2 3</span><br></pre></td></tr></table></figure>
+<p>有时需要局部变量不要被删除，请在第一次声明变量时使用 static 关键字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test() &#123;</span><br><span class="line">    static $x&#x3D;0;</span><br><span class="line">    echo $x . &quot; &quot;; &#x2F;&#x2F;输出时空格</span><br><span class="line">    $x++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">test();</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">结果：0 1 2 3</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>parameter  函数参数作用域</strong>  参数是通过调用代码将值传递给函数的局部变量。</p>
 <h2 id="六、PHP-中两个基本的输出方式echo-和-print"><a href="#六、PHP-中两个基本的输出方式echo-和-print" class="headerlink" title="六、PHP 中两个基本的输出方式echo 和 print"></a>六、PHP 中两个基本的输出方式echo 和 print</h2></li>
 </ul>
-<p><strong><em>1、echo - 可以输出一个或多个字符串，多个值之间用逗号分隔。</em></strong></p>
-<p><strong><em>echo是语言结构(language construct)，而并不是真正的函数，因此不能作为表达式的一部分使用。</em></strong></p>
+<p>1、echo 可以输出一个或多个字符串；</p>
+<p>2、print 只允许输出一个字符串，返回值总为 1；</p>
+<p>3、echo 输出的速度比 print 快；</p>
+<p>4、echo 没有返回值，print 有返回值 1；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  &lt; ?php </span><br><span class="line">  </span><br><span class="line">  $txt1&#x3D;&quot;RUNOOB.COM&quot;; </span><br><span class="line">  $cars&#x3D;array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);  </span><br><span class="line"> </span><br><span class="line">  echo &quot;这是一个&quot;. &quot;字符串，&quot;. &quot;使用了&quot;. &quot;多个&quot;.&quot;参数。&lt;br&gt;&quot;;</span><br><span class="line">  echo &quot;在 $txt1 学习 PHP&lt;br&gt;&quot;;</span><br><span class="line">  echo &quot;我车的品牌是 &#123;$cars[0]&#125;&quot;; </span><br><span class="line"></span><br><span class="line">  ?&gt;</span><br><span class="line">  </span><br><span class="line">输出结果：</span><br><span class="line">  这是一个字符串，使用了多个参数。</span><br><span class="line">  在 RUNOOB.COM 学习 PHP</span><br><span class="line">  我车的品牌是 Volvo</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+<h2 id="七、PHP-EOF-heredoc-使用说明"><a href="#七、PHP-EOF-heredoc-使用说明" class="headerlink" title="七、PHP EOF(heredoc) 使用说明"></a>七、PHP EOF(heredoc) 使用说明</h2><p>PHP EOF(heredoc)是一种在命令行和程序语言里定义一个字符串的方法。</p>
 <ul>
-<li><pre><code>&lt;?php
-echo &quot;&lt; h2&gt;PHP 很有趣!&lt; /h2&gt;&quot;;
-
-echo &quot;Hello world!&lt; br&gt;&quot;;
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">echo &quot;我要学 PHP!&lt; br&gt;&quot;;</span><br><span class="line"></span><br><span class="line">echo &quot;这是一个&quot;, &quot;字符串，&quot;, &quot;使用了&quot;, &quot;多个&quot;, &quot;参数。&quot;;</span><br><span class="line">  ?&gt;</span><br></pre></td></tr></table></figure>
-
-输出结果： 
-
-## PHP 很有趣!
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> Hello world!</span><br><span class="line">我要学 PHP!</span><br><span class="line">这是一个字符串，使用了多个参数。</span><br></pre></td></tr></table></figure>
-
-
-</code></pre>
-</li>
-</ul>
-<ul>
-<li>下面的实例演示了如何使用 echo 命令输出变量和字符串：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt; ?php </span><br><span class="line"></span><br><span class="line">$txt1&#x3D;&quot;学习 PHP&quot;; </span><br><span class="line"></span><br><span class="line">$txt2&#x3D;&quot;RUNOOB.COM&quot;; </span><br><span class="line"></span><br><span class="line">$cars&#x3D;array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);  </span><br><span class="line"></span><br><span class="line">echo $txt1; echo &quot;&lt; br&gt;&quot;; </span><br><span class="line"></span><br><span class="line">echo &quot;在 $txt2 学习 PHP &quot;; echo &quot;&lt; br&gt;&quot;;</span><br><span class="line"></span><br><span class="line"> echo &quot;我车的品牌是 &#123;$cars[0]&#125;&quot;; </span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<p>  输出结果：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">学习 PHP</span><br><span class="line">在 RUNOOB.COM 学习 PHP</span><br><span class="line">我车的品牌是 Volvo</span><br></pre></td></tr></table></figure>
-
-<p>  <strong><em>2、print - 只允许输出一个字符串，返回值总为 1。</em></strong></p>
-<p>  <strong><em>函数print()打印一个值（它的参数），如果字符串成功显示则返回true，否则返回false。</em></strong></p>
-<ul>
-<li><pre><code>&lt; ?php
-</code></pre>
-</li>
-</ul>
-<p>print “&lt; h2&gt;PHP 很有趣!&lt; /h2&gt;”; </p>
-<p>print “Hello world!&lt; br&gt;”; </p>
-<p>print “我要学习 PHP!”; </p>
-<p>?&gt;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line"></span><br><span class="line">## PHP 很有趣!</span><br><span class="line"></span><br><span class="line">  Hello world!</span><br><span class="line">  我要学习 PHP!</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;</span><br><span class="line">  &lt; ?php</span><br><span class="line">  $txt1&#x3D;&quot;学习 PHP&quot;;</span><br><span class="line">  $txt2&#x3D;&quot;RUNOOB.COM&quot;;</span><br><span class="line">$cars&#x3D;array(&quot;Volvo&quot;,&quot;BMW&quot;,&quot;Toyota&quot;);</span><br><span class="line">  </span><br><span class="line">  echo $txt1;</span><br><span class="line">  echo &quot;&lt; br&gt;&quot;;</span><br><span class="line">  echo &quot;在 $txt2 学习 PHP &quot;;</span><br><span class="line">  echo &quot;&lt; br&gt;&quot;;</span><br><span class="line">  echo &quot;我车的品牌是 &#123;$cars[0]&#125;&quot;;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
-
-<p>  输出结果：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">学习 PHP</span><br><span class="line">在 RUNOOB.COM 学习 PHP</span><br><span class="line">我车的品牌是 Volvo</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="七、PHP-EOF-heredoc-使用说明"><a href="#七、PHP-EOF-heredoc-使用说明" class="headerlink" title="七、PHP EOF(heredoc) 使用说明"></a>七、PHP EOF(heredoc) 使用说明</h2><p>PHP EOF(heredoc)是一种在命令行shell（如sh、csh、ksh、bash、PowerShell和zsh）和程序语言（像Perl、PHP、Python和Ruby）里定义一个字符串的方法。</p>
-<ul>
-<li><strong>EOF</strong> 可以用任意其它字符代替，只需保证结束标识与开始标识一致。比如常用大写的 <strong>EOT、EOD、EOF</strong> 来表示，但是不只限于那几个(也可以用：JSON、HTML等)，只要保证开始标记和结束标记不在正文中出现即可。</li>
+<li><strong>EOF</strong> 可以用任意其它字符代替，只要保证开始标记和结束标记不在正文中出现即可。</li>
 <li>结束标识必须顶格<strong>独自占一行</strong>(即必须从行首开始，前后不能衔接任何空白和字符)。</li>
 <li>以 <strong>&lt;&lt;&lt;EOF</strong> 开始标记开始，以 <strong>EOF</strong> 结束标记结束，结束标记必须顶头写，不能有缩进和空格，且在结束标记末尾要有分号 。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt; ?php</span><br><span class="line">echo &lt;&lt;&lt;EOF</span><br><span class="line">    &lt; h1&gt;我的第一个标题&lt; &#x2F;h1&gt;</span><br><span class="line">    &lt; p&gt;我的第一个段落。&lt; &#x2F;p&gt;</span><br><span class="line">EOF;</span><br><span class="line">*&#x2F;&#x2F; 结束需要独立一行且前后不能空格*</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt; ?php</span><br><span class="line">$a&#x3D;16;</span><br><span class="line">echo &lt;&lt;&lt;EOF</span><br><span class="line">   我要输出的是$a;</span><br><span class="line">EOF;</span><br><span class="line">&#x2F;&#x2F; 结束需要独立一行且前后不能空格</span><br><span class="line"> ?&gt;</span><br><span class="line"> </span><br><span class="line"> 输出结果：</span><br><span class="line"> 我要输出的是16；</span><br></pre></td></tr></table></figure>
 
 
       
