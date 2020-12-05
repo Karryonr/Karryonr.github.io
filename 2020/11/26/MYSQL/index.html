@@ -9,21 +9,17 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MySQL 创建数据库 我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下: 1CREATE DATABASE 数据库名;  使用 mysqladmin 创建数据库使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。 所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。 以下命令简">
+  <meta name="description" content="一、MySQL 创建数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL">
 <meta property="og:url" content="http://example.com/2020/11/26/MYSQL/index.html">
 <meta property="og:site_name" content="Karryonr">
-<meta property="og:description" content="MySQL 创建数据库 我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下: 1CREATE DATABASE 数据库名;  使用 mysqladmin 创建数据库使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。 所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。 以下命令简">
+<meta property="og:description" content="一、MySQL 创建数据库">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2014/03/84D4F5A6-445C-4AF7-8626-990BA176EC8D.jpg">
-<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2014/03/2FA2CCA3-B04E-4E99-BF4B-D36CBFBDB1A7.jpg">
-<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2014/03/8831EF0F-E958-45BE-A39C-35AC5B14C246.jpg">
 <meta property="article:published_time" content="2020-11-26T14:22:42.000Z">
-<meta property="article:modified_time" content="2020-11-26T15:23:00.303Z">
+<meta property="article:modified_time" content="2020-12-03T18:50:51.631Z">
 <meta property="article:author" content="Karryonr">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2014/03/84D4F5A6-445C-4AF7-8626-990BA176EC8D.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Karryonr" type="application/atom+xml">
   
@@ -230,141 +226,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="MySQL-创建数据库"><a href="#MySQL-创建数据库" class="headerlink" title="MySQL 创建数据库"></a>MySQL 创建数据库</h1><hr>
-<p>我们可以在登陆 MySQL 服务后，使用 <strong>create</strong> 命令创建数据库，语法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE 数据库名;</span><br></pre></td></tr></table></figure>
+        <h1 id="一、MySQL-创建数据库"><a href="#一、MySQL-创建数据库" class="headerlink" title="一、MySQL 创建数据库"></a>一、MySQL 创建数据库<a id="more"></a></h1><h4 id="登陆-MySQL-服务，使用-create-命令创建数据库"><a href="#登陆-MySQL-服务，使用-create-命令创建数据库" class="headerlink" title="登陆 MySQL 服务，使用 create 命令创建数据库"></a>登陆 MySQL 服务，使用 <strong>create</strong> 命令创建数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE 数据库名;</span><br></pre></td></tr></table></figure>
 
-<h3 id="使用-mysqladmin-创建数据库"><a href="#使用-mysqladmin-创建数据库" class="headerlink" title="使用 mysqladmin 创建数据库"></a>使用 mysqladmin 创建数据库</h3><p>使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。</p>
-<p>所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql <strong>mysqladmin</strong> 命令来创建数据库。</p>
-<p>以下命令简单的演示了创建数据库的过程，数据名为 RUNOOB:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysqladmin -u root -p create RUNOOB</span><br><span class="line">Enter password:******</span><br></pre></td></tr></table></figure>
-
-<p>以上命令执行成功后会创建 MySQL 数据库 RUNOOB。</p>
-<h2 id="使用-PHP脚本-创建数据库"><a href="#使用-PHP脚本-创建数据库" class="headerlink" title="使用 PHP脚本 创建数据库"></a>使用 PHP脚本 创建数据库</h2><p>PHP 使用 mysqli_query 函数来创建或者删除 MySQL 数据库。</p>
-<p>该函数有两个参数，在执行成功时返回 TRUE，否则返回 FALSE。</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqli_query(connection,query,resultmode);</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><em>connection</em></td>
-<td align="left">必需。规定要使用的 MySQL 连接。</td>
-</tr>
-<tr>
-<td align="left"><em>query</em></td>
-<td align="left">必需，规定查询字符串。</td>
-</tr>
-<tr>
-<td align="left"><em>resultmode</em></td>
-<td align="left">可选。一个常量。可以是下列值中的任意一个：MYSQLI_USE_RESULT（如果需要检索大量数据，请使用这个）MYSQLI_STORE_RESULT（默认）</td>
-</tr>
-</tbody></table>
-<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>以下实例演示了使用PHP来创建一个数据库：</p>
-<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$dbhost &#x3D; &#39;localhost&#39;;  &#x2F;&#x2F; mysql服务器主机地址</span><br><span class="line">$dbuser &#x3D; &#39;root&#39;;            &#x2F;&#x2F; mysql用户名</span><br><span class="line">$dbpass &#x3D; &#39;123456&#39;;          &#x2F;&#x2F; mysql用户名密码</span><br><span class="line">$conn &#x3D; mysqli_connect($dbhost, $dbuser, $dbpass);</span><br><span class="line">if(! $conn )</span><br><span class="line">&#123;</span><br><span class="line">  die(&#39;连接错误: &#39; . mysqli_error($conn));</span><br><span class="line">&#125;</span><br><span class="line">echo &#39;连接成功&lt;br &#x2F;&gt;&#39;;</span><br><span class="line">$sql &#x3D; &#39;CREATE DATABASE RUNOOB&#39;;</span><br><span class="line">$retval &#x3D; mysqli_query($conn,$sql );</span><br><span class="line">if(! $retval )</span><br><span class="line">&#123;</span><br><span class="line">    die(&#39;创建数据库失败: &#39; . mysqli_error($conn));</span><br><span class="line">&#125;</span><br><span class="line">echo &quot;数据库 RUNOOB 创建成功\n&quot;;</span><br><span class="line">mysqli_close($conn);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<p>执行成功后，返回如下结果：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/84D4F5A6-445C-4AF7-8626-990BA176EC8D.jpg" alt="img"></p>
-<p>如果数据库已存在，执行后，返回如下结果：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/2FA2CCA3-B04E-4E99-BF4B-D36CBFBDB1A7.jpg" alt="img"></p>
-<h1 id="MySQL-删除数据库"><a href="#MySQL-删除数据库" class="headerlink" title="MySQL 删除数据库"></a>MySQL 删除数据库</h1><hr>
-<p>使用普通用户登陆 MySQL 服务器，你可能需要特定的权限来创建或者删除 MySQL 数据库，所以我们这边使用 root 用户登录，root 用户拥有最高权限。</p>
-<p>在删除数据库过程中，务必要十分谨慎，因为在执行删除命令后，所有数据将会消失。</p>
-<h2 id="drop-命令删除数据库"><a href="#drop-命令删除数据库" class="headerlink" title="drop 命令删除数据库"></a>drop 命令删除数据库</h2><p>drop 命令格式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database &lt;数据库名&gt;;</span><br></pre></td></tr></table></figure>
+<h1 id="二、MySQL-删除数据库"><a href="#二、MySQL-删除数据库" class="headerlink" title="二、MySQL 删除数据库"></a>二、MySQL 删除数据库</h1><hr>
+<h4 id="drop-命令删除数据库"><a href="#drop-命令删除数据库" class="headerlink" title="drop 命令删除数据库"></a>drop 命令删除数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database &lt;数据库名&gt;;</span><br></pre></td></tr></table></figure>
 
 <p>例如删除名为 RUNOOB 的数据库：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; drop database RUNOOB;</span><br></pre></td></tr></table></figure>
 
-<h2 id="使用-mysqladmin-删除数据库"><a href="#使用-mysqladmin-删除数据库" class="headerlink" title="使用 mysqladmin 删除数据库"></a>使用 mysqladmin 删除数据库</h2><p>你也可以使用 mysql <strong>mysqladmin</strong> 命令在终端来执行删除命令。</p>
-<p>以下实例删除数据库 RUNOOB(该数据库在前一章节已创建)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysqladmin -u root -p drop RUNOOB</span><br><span class="line">Enter password:******</span><br></pre></td></tr></table></figure>
-
-<p>执行以上删除数据库命令后，会出现一个提示框，来确认是否真的删除数据库：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dropping the database is potentially a very bad thing to do.</span><br><span class="line">Any data stored in the database will be destroyed.</span><br><span class="line"></span><br><span class="line">Do you really want to drop the &#39;RUNOOB&#39; database [y&#x2F;N] y</span><br><span class="line">Database &quot;RUNOOB&quot; dropped</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="使用PHP脚本删除数据库"><a href="#使用PHP脚本删除数据库" class="headerlink" title="使用PHP脚本删除数据库"></a>使用PHP脚本删除数据库</h2><p>PHP使用 mysqli_query 函数来创建或者删除 MySQL 数据库。</p>
-<p>该函数有两个参数，在执行成功时返回 TRUE，否则返回 FALSE。</p>
-<h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqli_query(connection,query,resultmode);</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><em>connection</em></td>
-<td align="left">必需。规定要使用的 MySQL 连接。</td>
-</tr>
-<tr>
-<td align="left"><em>query</em></td>
-<td align="left">必需，规定查询字符串。</td>
-</tr>
-<tr>
-<td align="left"><em>resultmode</em></td>
-<td align="left">可选。一个常量。可以是下列值中的任意一个：MYSQLI_USE_RESULT（如果需要检索大量数据，请使用这个）MYSQLI_STORE_RESULT（默认）</td>
-</tr>
-</tbody></table>
-<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><p>以下实例演示了使用PHP mysqli_query函数来删除数据库：</p>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$dbhost &#x3D; &#39;localhost&#39;;  &#x2F;&#x2F; mysql服务器主机地址</span><br><span class="line">$dbuser &#x3D; &#39;root&#39;;            &#x2F;&#x2F; mysql用户名</span><br><span class="line">$dbpass &#x3D; &#39;123456&#39;;          &#x2F;&#x2F; mysql用户名密码</span><br><span class="line">$conn &#x3D; mysqli_connect($dbhost, $dbuser, $dbpass);</span><br><span class="line">if(! $conn )</span><br><span class="line">&#123;</span><br><span class="line">    die(&#39;连接失败: &#39; . mysqli_error($conn));</span><br><span class="line">&#125;</span><br><span class="line">echo &#39;连接成功&lt;br &#x2F;&gt;&#39;;</span><br><span class="line">$sql &#x3D; &#39;DROP DATABASE RUNOOB&#39;;</span><br><span class="line">$retval &#x3D; mysqli_query( $conn, $sql );</span><br><span class="line">if(! $retval )</span><br><span class="line">&#123;</span><br><span class="line">    die(&#39;删除数据库失败: &#39; . mysqli_error($conn));</span><br><span class="line">&#125;</span><br><span class="line">echo &quot;数据库 RUNOOB 删除成功\n&quot;;</span><br><span class="line">mysqli_close($conn);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<p>执行成功后，数结果为：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/8831EF0F-E958-45BE-A39C-35AC5B14C246.jpg" alt="img"></p>
-<p><strong>注意：</strong> 在使用PHP脚本删除数据库时，不会出现确认是否删除信息，会直接删除指定数据库，所以你在删除数据库时要特别小心。</p>
-<h1 id="MySQL-选择数据库"><a href="#MySQL-选择数据库" class="headerlink" title="MySQL 选择数据库"></a>MySQL 选择数据库</h1><p>在你连接到 MySQL 数据库后，可能有多个可以操作的数据库，所以你需要选择你要操作的数据库。</p>
-<hr>
-<h2 id="从命令提示窗口中选择MySQL数据库"><a href="#从命令提示窗口中选择MySQL数据库" class="headerlink" title="从命令提示窗口中选择MySQL数据库"></a>从命令提示窗口中选择MySQL数据库</h2><p>在 mysql&gt; 提示窗口中可以很简单的选择特定的数据库。你可以使用SQL命令来选择指定的数据库。</p>
-<h3 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h3><p>以下实例选取了数据库 RUNOOB:</p>
+<h1 id="三、MySQL-选择数据库"><a href="#三、MySQL-选择数据库" class="headerlink" title="三、MySQL 选择数据库"></a>三、MySQL 选择数据库</h1><h4 id="从命令提示窗口中选择MySQL数据库"><a href="#从命令提示窗口中选择MySQL数据库" class="headerlink" title="从命令提示窗口中选择MySQL数据库"></a>从命令提示窗口中选择MySQL数据库</h4><p>以下实例选取了数据库 RUNOOB:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@host]# mysql -u root -p</span><br><span class="line">Enter password:******</span><br><span class="line">mysql&gt; use RUNOOB;</span><br><span class="line">Database changed</span><br><span class="line">mysql&gt;</span><br></pre></td></tr></table></figure>
 
 <p>执行以上命令后，你就已经成功选择了 RUNOOB 数据库，在后续的操作中都会在 RUNOOB 数据库中执行。</p>
-<p>**注意:**所有的数据库名，表名，表字段都是区分大小写的。所以你在使用SQL命令时需要输入正确的名称。</p>
-<hr>
-<h2 id="使用PHP脚本选择MySQL数据库"><a href="#使用PHP脚本选择MySQL数据库" class="headerlink" title="使用PHP脚本选择MySQL数据库"></a>使用PHP脚本选择MySQL数据库</h2><p>PHP 提供了函数 mysqli_select_db 来选取一个数据库。函数在执行成功后返回 TRUE ，否则返回 FALSE 。</p>
-<h3 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqli_select_db(connection,dbname);</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><em>connection</em></td>
-<td align="left">必需。规定要使用的 MySQL 连接。</td>
-</tr>
-<tr>
-<td align="left"><em>dbname</em></td>
-<td align="left">必需，规定要使用的默认数据库。</td>
-</tr>
-</tbody></table>
-<h3 id="实例-3"><a href="#实例-3" class="headerlink" title="实例"></a>实例</h3><p>以下实例展示了如何使用 mysqli_select_db 函数来选取一个数据库：</p>
-<h2 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$dbhost &#x3D; &#39;localhost&#39;;  &#x2F;&#x2F; mysql服务器主机地址</span><br><span class="line">$dbuser &#x3D; &#39;root&#39;;            &#x2F;&#x2F; mysql用户名</span><br><span class="line">$dbpass &#x3D; &#39;123456&#39;;          &#x2F;&#x2F; mysql用户名密码</span><br><span class="line">$conn &#x3D; mysqli_connect($dbhost, $dbuser, $dbpass);</span><br><span class="line">if(! $conn )</span><br><span class="line">&#123;</span><br><span class="line">    die(&#39;连接失败: &#39; . mysqli_error($conn));</span><br><span class="line">&#125;</span><br><span class="line">echo &#39;连接成功&#39;;</span><br><span class="line">mysqli_select_db($conn, &#39;RUNOOB&#39; );</span><br><span class="line">mysqli_close($conn);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改数据库"><a href="#修改数据库" class="headerlink" title="修改数据库"></a>修改数据库</h2><p><strong>1.修改数据库的输入数据类型</strong><br>格式：alter table （表名） modify （要修改的内容）<br><strong>2.增添数据库中的一个输入项</strong><br>格式：alter table （表名）add （要增加的内容）<br><strong>3.更改原本的数据库项目名字</strong><br>格式： alter table （表名）change column（要修改的） （修改结果）（数据类型）<br><strong>4.修改表名</strong><br>格式：alter table （原本表名） rename （现在想要的表名）<br>这两个都是属于结构设计范畴的。</p>
-<h2 id="mysql的增删改查"><a href="#mysql的增删改查" class="headerlink" title="mysql的增删改查"></a>mysql的增删改查</h2><p><strong>首先是它们的语句命令</strong></p>
+<p><strong>注意:**所有的数据库名，表名，表字段都是</strong>区分大小**写的。</p>
+<h1 id="四、修改数据库"><a href="#四、修改数据库" class="headerlink" title="四、修改数据库"></a>四、修改数据库</h1><p><strong>1.修改数据库的输入数据类型</strong><br>格式：alter table （表名） modify （要修改的内容）<br><strong>2.增添数据库中的一个输入项</strong><br>格式：alter table （表名）add （要增加的内容）<br><strong>3.更改原本的数据库项目名字</strong><br>格式： alter table （表名）change column（要修改的） （修改结果）（数据类型）<br><strong>4.修改表名</strong><br>格式：alter table （原本表名） rename （现在想要的表名）<br>这两个都是属于结构设计范畴的。</p>
+<h1 id="五、mysql的增删改查"><a href="#五、mysql的增删改查" class="headerlink" title="五、mysql的增删改查"></a>五、mysql的增删改查</h1><p><strong>1、首先是它们的语句命令</strong></p>
 <p>增:insert<br>删:delete<br>改：update<br>查:SELECT或者show<br><strong>格式</strong><br>向所有字段插入：insert into 表名（字段1，字段2，字段3……）values(值1,值2，值3……)；<br>向指定字段插入:insert into 表名（指定字段集合） valuse（指定字段值）;</p>
 <p>实例</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table test(id int, name varchar(40),sex varchar(4),birthday date);&#x2F;&#x2F;新建一个表</span><br><span class="line">insert into test(id,name,sex,birthday)&#x2F;&#x2F;增加数据（插入数据）</span><br><span class="line">values(1，&#39;zhangsan&#39;，&#39;male&#39;,&#39;2001-08-06&#39;);</span><br><span class="line">update test set sex&#x3D;female;&#x2F;&#x2F;所有员工性别更改为女性</span><br><span class="line">update test set sex &#x3D; female where name &#x3D;&#39;zhangsan&#39;;&#x2F;&#x2F;更改张三这个员工的性别</span><br></pre></td></tr></table></figure>
 
-<p>这边说一下where这个函数的意思：where可以指定你想更换的数据行。<br><strong>删除表数据</strong><br>举例子吧：</p>
+<p>这边说一下where这个函数的意思：where可以指定你想更换的数据行。<br><strong>2、删除表数据</strong><br>举例子吧：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">delete from test where name&#x3D;&#39;zhangsan&#39;;&#x2F;&#x2F;删除表中张三的记录</span><br><span class="line">delete from test;&#x2F;&#x2F;删除表中所有的记录</span><br><span class="line">truncate table test;&#x2F;&#x2F;使用truncate删除表中记录</span><br></pre></td></tr></table></figure>
 
-<p><strong>查询表数据</strong></p>
+<p><strong>3、查询表数据</strong></p>
 <p><strong>格式</strong>：select *或者【字段名】 from 表名；<br><strong>查询所有字段和部分字段。</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select id,name,sex,birthday from test;&#x2F;&#x2F;从表中获取全部数据</span><br><span class="line">select name, birthday from test;&#x2F;&#x2F;从表中获取姓名和生日的信息</span><br><span class="line">select birthday from test where sex&#x3D;male；&#x2F;&#x2F;获取性别为男性的生日</span><br><span class="line">select 数字，数字，数字，数字........;&#x2F;&#x2F;可以查询指定字段的数据</span><br><span class="line">select 要查询的字段名 from 库名.表名；</span><br><span class="line">select 要查询的字段名 from 库名.表名 where 已知条件的字段名&#x3D;&#39;已知条件的值&#39;；</span><br><span class="line">select 要查询的字段名 from 库名.表名 where 已知条件1的字段名&#x3D;&#39;已知条件1的值&#39; and 已知条件2的字段名&#x3D;&#39;已知条件2的值&#39;</span><br></pre></td></tr></table></figure>
 
-<p><strong>使用distinct去除重复数据</strong><br>select distinct 字段名 from 表名；<br><strong>使用limit指定查询结果的行数</strong><br>select 字段名 from drom 表名 limit n；<br>实例<br>select *from stu limit 1;</p>
-<p><strong>使用order by 对结果进行排序</strong><br>order by 字段名 ASC/DESC</p>
-<p><strong>修改表数据</strong><br>语法：update 表名 set 字段1=值，字段2=值 ；<br>插入数据insert</p>
+<p><strong>4、使用distinct去除重复数据</strong><br>select distinct 字段名 from 表名；<br><strong>5、使用limit指定查询结果的行数</strong><br>select 字段名 from drom 表名 limit n；<br>实例<br>select *from stu limit 1;</p>
+<p><strong>6、使用order by 对结果进行排序</strong><br>order by 字段名 ASC/DESC</p>
+<p><strong>7、修改表数据</strong><br>语法：update 表名 set 字段1=值，字段2=值 ；<br>插入数据insert</p>
 
       
     </div>
@@ -374,8 +264,17 @@
     
 <nav id="article-nav">
   
+    <a href="/2020/12/05/mysql%20%E7%AC%94%E8%AE%B0%E4%B8%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          mysql基础学习
+        
+      </div>
+    </a>
   
-    <a href="/2020/11/18/php-five/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2020/11/21/php/php-five/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">php学习笔记五——菜鸟教程</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
