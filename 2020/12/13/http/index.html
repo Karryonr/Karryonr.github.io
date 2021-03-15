@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>mysql基础知识补充 | Karryonr</title>
+  <title>http--菜鸟教程 | Karryonr</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="函数">
+  <meta name="description" content="一、HTTP 请求方法   序号 方法 描述    1 GET 请求指定的页面信息，并返回实体主体。   2 HEAD 类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头   3 POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和&#x2F;或已有资源的修改。   4 PUT 从客户端向服务器传送的数据取代指">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql基础知识补充">
-<meta property="og:url" content="http://example.com/2020/12/06/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/index.html">
+<meta property="og:title" content="http--菜鸟教程">
+<meta property="og:url" content="http://example.com/2020/12/13/http/index.html">
 <meta property="og:site_name" content="Karryonr">
-<meta property="og:description" content="函数">
+<meta property="og:description" content="一、HTTP 请求方法   序号 方法 描述    1 GET 请求指定的页面信息，并返回实体主体。   2 HEAD 类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头   3 POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和&#x2F;或已有资源的修改。   4 PUT 从客户端向服务器传送的数据取代指">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-12-06T04:53:14.000Z">
-<meta property="article:modified_time" content="2020-12-06T11:14:07.635Z">
+<meta property="article:published_time" content="2020-12-13T11:11:29.000Z">
+<meta property="article:modified_time" content="2020-12-13T11:25:02.250Z">
 <meta property="article:author" content="Karryonr">
 <meta name="twitter:card" content="summary">
   
@@ -181,11 +181,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-mysql基础知识补充" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-http" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2020/12/06/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/" class="article-date">
-  	<time datetime="2020-12-06T04:53:14.000Z" itemprop="datePublished">2020-12-06</time>
+      <a href="/2020/12/13/http/" class="article-date">
+  	<time datetime="2020-12-13T11:11:29.000Z" itemprop="datePublished">2020-12-13</time>
 </a>
     </div>
   
@@ -198,7 +198,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      mysql基础知识补充
+      http--菜鸟教程
       
     </h1>
   
@@ -212,8 +212,8 @@
         
           
 <div class="counter-tag counter">
-    <span id="/2020/12/06/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="mysql基础知识补充">
+    <span id="/2020/12/13/http/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="http--菜鸟教程">
          &nbsp;
         view
     </span>
@@ -226,39 +226,95 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数<a id="more"></a></h1><p>这里默认是security</p>
-<ol>
-<li><p><strong>left()函数</strong>：left(database(),1)=’s’</p>
-<p>left(a,b)从左侧截取a的前b位，正确返回1，错误返回0</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select left(database(),1)&#x3D;&#39;s&#39;;  &#x2F;&#x2F;前1位是否是s</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="2">
-<li><p><strong>regexp函数</strong>：select user() regexp ‘r’</p>
-<p>user()的结果是root，regexp为匹配root的正则表达式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select database()regexp&#39;s&#39;;  &#x2F;&#x2F;匹配第一个字符是否是s</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>like函数</strong>：select user() like ‘ro%’</p>
-</li>
-</ol>
-<p>​       匹配与regexp相似      </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select database()like&#39;s%&#39;;  &#x2F;&#x2F;匹配第一个字符是否是s</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><p><strong>substr函数</strong>：select substr(x,x,x)</p>
-<p>substr(a,b,c)从位置b开始，截取a字符串c位长度</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select substr((select database()),1,1)&#x3D;&#39;s&#39;;  &#x2F;&#x2F;匹配第一个字符是否是s</span><br><span class="line"></span><br><span class="line">select substr((select database()),1,3)&#x3D;&#39;sec&#39;;  &#x2F;&#x2F;匹配前三个字符是否是sec</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>ascii()函数</strong>：将某个字符串转化为ASCII值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> select ascii(&#39;a&#39;);</span><br><span class="line">+------------+</span><br><span class="line">| ascii(&#39;a&#39;) |</span><br><span class="line">+------------+</span><br><span class="line">|         97 |</span><br><span class="line">+------------+</span><br><span class="line"></span><br><span class="line">select ascii(&#39;s&#39;);</span><br><span class="line">+------------+</span><br><span class="line">| ascii(&#39;s&#39;) |</span><br><span class="line">+------------+</span><br><span class="line">|        115 |</span><br><span class="line">+------------+</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select ascii (substr((select database()),1,1))；&#x2F;&#x2F;直接回显115</span><br><span class="line">select ascii (substr((select database()),1,1))&gt;110;&#x2F;&#x2F;大于110，返回1，否则为0</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
+        <h1 id="一、HTTP-请求方法"><a href="#一、HTTP-请求方法" class="headerlink" title="一、HTTP 请求方法"></a>一、HTTP 请求方法</h1><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">方法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">GET</td>
+<td align="left">请求指定的页面信息，并返回实体主体。</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">HEAD</td>
+<td align="left">类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">POST</td>
+<td align="left">向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和/或已有资源的修改。</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">PUT</td>
+<td align="left">从客户端向服务器传送的数据取代指定的文档的内容。</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">DELETE</td>
+<td align="left">请求服务器删除指定的页面。</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">CONNECT</td>
+<td align="left">HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器。</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">OPTIONS</td>
+<td align="left">允许客户端查看服务器的性能。</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">TRACE</td>
+<td align="left">回显服务器收到的请求，主要用于测试或诊断。</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">PATCH</td>
+<td align="left">是对 PUT 方法的补充，用来对已知资源进行局部更新 。</td>
+</tr>
+</tbody></table>
+<h1 id="二、HTTP状态码"><a href="#二、HTTP状态码" class="headerlink" title="二、HTTP状态码"></a>二、HTTP状态码</h1><p>常见的HTTP状态码：</p>
+<ul>
+<li>200 - 请求成功</li>
+<li>301 - 资源（网页等）被永久转移到其它URL</li>
+<li>404 - 请求的资源（网页等）不存在</li>
+<li>500 - 内部服务器错误</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">分类</th>
+<th align="left">分类描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1**</td>
+<td align="left">信息，服务器收到请求，需要请求者继续执行操作</td>
+</tr>
+<tr>
+<td align="left">2**</td>
+<td align="left">成功，操作被成功接收并处理</td>
+</tr>
+<tr>
+<td align="left">3**</td>
+<td align="left">重定向，需要进一步的操作以完成请求</td>
+</tr>
+<tr>
+<td align="left">4**</td>
+<td align="left">客户端错误，请求包含语法错误或无法完成请求</td>
+</tr>
+<tr>
+<td align="left">5**</td>
+<td align="left">服务器错误，服务器在处理请求的过程中发生了错误</td>
+</tr>
+</tbody></table>
 
       
     </div>
@@ -268,18 +324,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/12/06/Burp-Suit/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          Burp Suit
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/12/06/mysql-4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Less-5</div>
+    <a href="/2020/12/06/Burp-Suit/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Burp Suit</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -289,7 +336,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="mysql基础知识补充" data-title="mysql基础知识补充" data-url="http://example.com/2020/12/06/mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/"  data-images="/img/啦啦啦.jpg" data-content="mysql基础知识补充">
+<div class="ds-share share" data-thread-key="http" data-title="http--菜鸟教程" data-url="http://example.com/2020/12/13/http/"  data-images="/img/啦啦啦.jpg" data-content="http--菜鸟教程">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
@@ -313,7 +360,7 @@
   <div class="outer">
     <div id="footer-info">
       <div class="footer-left">
-        &copy; 2020 Karryonr
+        &copy; 2021 Karryonr
       </div>
         <div class="footer-right">
           <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
