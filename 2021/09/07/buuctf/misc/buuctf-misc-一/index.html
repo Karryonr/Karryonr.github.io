@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>buuctf misc (一) | Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="小易的U盘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="buuctf misc (一)">
+<meta property="og:url" content="http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%B8%80/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="小易的U盘">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/pictures/1.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727181445284.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727175033011.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727180518373.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727180723737.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727172906633.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727173038053.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727173155758.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727170433326.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727170453615.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727170517755.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727170558543.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727160112157.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727160006629.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727155941400.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727160456454.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727134439047.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727134453583.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727121037463.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727121229451.png">
+<meta property="og:image" content="c:/Users/john/AppData/Roaming/Typora/typora-user-images/image-20210727122044540.png">
+<meta property="article:published_time" content="2021-09-07T08:29:25.000Z">
+<meta property="article:modified_time" content="2021-09-07T09:29:58.346Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/pictures/1.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-buuctf/misc/buuctf-misc-一" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/09/07/buuctf/misc/buuctf-misc-%E4%B8%80/" class="article-date">
+  	<time datetime="2021-09-07T08:29:25.000Z" itemprop="datePublished">2021-09-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      buuctf misc (一)
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="小易的U盘"><a href="#小易的U盘" class="headerlink" title="小易的U盘"></a>小易的U盘<span id="more"></span></h2><p>将源文件进行解压</p>
+<p><img src="C:\Users\john\Desktop\大学\网安\HEXO\source_posts\pictures\1.png"></p>
+<p>发现flag.txt没有信息，但是autorun.inf发现flag在32中，打开即可</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727181445284.png" alt="image-20210727181445284"></p>
+<p>flag{29a0vkrlek3eu10ue89yug9y4r0wdu10}</p>
+<h2 id="从娃娃抓起"><a href="#从娃娃抓起" class="headerlink" title="从娃娃抓起"></a>从娃娃抓起</h2><p>解压发现有两个文件</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727175033011.png" alt="image-20210727175033011"></p>
+<p>中文电码对照表：<a target="_blank" rel="noopener" href="https://wenku.baidu.com/view/5102472bf90f76c660371ab5.html">https://wenku.baidu.com/view/5102472bf90f76c660371ab5.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0086 1562 2535 5174       --&gt;     人工智能</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bnhn s wwy vffg vffg rrhy fhnv    --&gt;  也要从娃娃抓起</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727180518373.png" alt="image-20210727180518373"></p>
+<p>将“人工智能也要从娃娃抓起”进行MD5 32位小写转化–得到flag</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727180723737.png" alt="image-20210727180723737"></p>
+<h2 id="SUCTF2018-single-dog"><a href="#SUCTF2018-single-dog" class="headerlink" title="SUCTF2018 single dog"></a>SUCTF2018 single dog</h2><p>用foremost打开图片–发现存在zip文件</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727172906633.png" alt="image-20210727172906633"></p>
+<p>解压发现是一些字符表情包–aaencode解密得到flag</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727173038053.png" alt="image-20210727173038053"></p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727173155758.png" alt="image-20210727173155758"></p>
+<p>参考链接：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_46481239/article/details/108758589">https://blog.csdn.net/m0_46481239/article/details/108758589</a></p>
+<h2 id="间谍启示录"><a href="#间谍启示录" class="headerlink" title="间谍启示录"></a>间谍启示录</h2><p>使用formost分离文件–得到output文件</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727170433326.png" alt="image-20210727170433326"></p>
+<p>打开文件–解压–点击flag.exe文件</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727170453615.png" alt="image-20210727170453615"></p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727170517755.png" alt="image-20210727170517755"></p>
+<p>打开机密文件，找到flag</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727170558543.png" alt="image-20210727170558543"></p>
+<p>参考链接：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/mochu7777777/article/details/109464019">https://blog.csdn.net/mochu7777777/article/details/109464019</a></p>
+<h2 id="我吃三明治"><a href="#我吃三明治" class="headerlink" title="我吃三明治"></a>我吃三明治</h2><p>用binwalk查看图片，可以看出这是有两张图片组合</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727160112157.png" alt="image-20210727160112157"></p>
+<p>用winhex看查图片，找到jpg结束符FF D9 ，看到后面有一串字符</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727160006629.png" alt="image-20210727160006629"></p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727155941400.png" alt="image-20210727155941400"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2---Base32解码</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727160456454.png" alt="image-20210727160456454"></p>
+<h2 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h2><p>先用binwalk进行分离出zip，再进行爆破</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727134439047.png" alt="image-20210727134439047"></p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727134453583.png" alt="image-20210727134453583"></p>
+<h2 id="假如给我三天光明"><a href="#假如给我三天光明" class="headerlink" title="假如给我三天光明"></a>假如给我三天光明</h2><p>解读图片的盲文–kmdonowg</p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727121037463.png" alt="image-20210727121037463"></p>
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727121229451.png" alt="image-20210727121229451"></p>
+<p>用密码来解压音乐压缩包，发现是摩斯密码音频</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-.-.  -  ..-.  .--  .--.  .  ..  -----  ---..  --...  ...--  ..---  ..--..  ..---  ...--  -..  --..</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210727122044540.png" alt="image-20210727122044540"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/09/07/buuctf/misc/buuctf-misc-%E4%BA%8C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          buuctf misc (二)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/09/07/buuctf/web/%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">极客大挑战</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="buuctf/misc/buuctf-misc-一" data-title="buuctf misc (一)" data-url="http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%B8%80/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="buuctf misc (一)">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2021 John Doe
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

