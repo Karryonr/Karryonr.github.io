@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-31T10:57:20.403Z</updated>
+  <updated>2021-11-01T15:28:40.095Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,31 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>1</title>
-    <link href="http://example.com/2021/10/31/1/"/>
-    <id>http://example.com/2021/10/31/1/</id>
-    <published>2021-10-31T10:57:20.000Z</published>
-    <updated>2021-10-31T10:57:20.403Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/10/31/hello-world/"/>
-    <id>http://example.com/2021/10/31/hello-world/</id>
-    <published>2021-10-31T10:32:05.322Z</published>
-    <updated>2021-10-31T10:45:34.813Z</updated>
+    <title>ctfshow 爆破web 21~28</title>
+    <link href="http://example.com/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-28/"/>
+    <id>http://example.com/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-28/</id>
+    <published>2021-11-01T15:24:24.000Z</published>
+    <updated>2021-11-01T15:28:40.095Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;web21-爆破什么的，都是基操&quot;&gt;&lt;a href=&quot;#web21-爆破什么的，都是基操&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -51,344 +38,14 @@
   </entry>
   
   <entry>
-    <title>月饼杯misc</title>
-    <link href="http://example.com/2021/09/26/%E6%9C%88%E9%A5%BC%E6%9D%AFmisc/"/>
-    <id>http://example.com/2021/09/26/%E6%9C%88%E9%A5%BC%E6%9D%AFmisc/</id>
-    <published>2021-09-26T10:54:59.000Z</published>
-    <updated>2021-09-26T12:41:10.427Z</updated>
+    <title>ctfshow 信息收集web 1~20</title>
+    <link href="http://example.com/2021/11/01/ctfshow%20%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86web%201~20/"/>
+    <id>http://example.com/2021/11/01/ctfshow%20%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86web%201~20/</id>
+    <published>2021-11-01T07:49:12.000Z</published>
+    <updated>2021-11-01T15:29:20.557Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;project-Tao-1&quot;&gt;&lt;a href=&quot;#project-Tao-1&quot; class=&quot;headerlink&quot; title=&quot;project Tao-1&quot;&gt;&lt;/a&gt;project Tao-1&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>buuctf-misc-三</title>
-    <link href="http://example.com/2021/09/08/buuctf/buuctf-misc-%E4%B8%89/"/>
-    <id>http://example.com/2021/09/08/buuctf/buuctf-misc-%E4%B8%89/</id>
-    <published>2021-09-08T09:50:11.000Z</published>
-    <updated>2021-09-10T03:09:05.947Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;羊城杯-–-Black-cat&quot;&gt;&lt;a href=&quot;#羊城杯-–-Black-cat&quot; class=&quot;headerlink&quot; title=&quot;羊城杯 – Black cat&quot;&gt;&lt;/a&gt;羊城杯 – Black</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>buuctf misc (二)</title>
-    <link href="http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%BA%8C/"/>
-    <id>http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%BA%8C/</id>
-    <published>2021-09-07T08:29:37.000Z</published>
-    <updated>2021-09-11T11:51:28.102Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;FLAG&quot;&gt;&lt;a href=&quot;#FLAG&quot; class=&quot;headerlink&quot; title=&quot;FLAG&quot;&gt;&lt;/a&gt;FLAG</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>buuctf misc (一)</title>
-    <link href="http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%B8%80/"/>
-    <id>http://example.com/2021/09/07/buuctf/misc/buuctf-misc-%E4%B8%80/</id>
-    <published>2021-09-07T08:29:25.000Z</published>
-    <updated>2021-09-07T09:29:58.346Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;小易的U盘&quot;&gt;&lt;a href=&quot;#小易的U盘&quot; class=&quot;headerlink&quot; title=&quot;小易的U盘&quot;&gt;&lt;/a&gt;小易的U盘</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>极客大挑战</title>
-    <link href="http://example.com/2021/09/07/buuctf/web/%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98/"/>
-    <id>http://example.com/2021/09/07/buuctf/web/%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98/</id>
-    <published>2021-09-07T08:23:39.000Z</published>
-    <updated>2021-09-07T08:42:55.362Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;极客大挑战–BabySQL&quot;&gt;&lt;a href=&quot;#极客大挑战–BabySQL&quot; class=&quot;headerlink&quot; title=&quot;极客大挑战–BabySQL&quot;&gt;&lt;/a&gt;极客大挑战–BabySQL</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IceCTFBlue Monday</title>
-    <link href="http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/IceCTFBlue-Monday/"/>
-    <id>http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/IceCTFBlue-Monday/</id>
-    <published>2021-09-05T08:58:35.000Z</published>
-    <updated>2021-09-05T09:50:32.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;用010editor打开文件，发现其中藏着flag
-
-&lt;p&gt;用了别人的python脚本&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IceCTFThor&#39;s a hacker now</title>
-    <link href="http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/IceCTFThor-s-a-hacker-now/"/>
-    <id>http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/IceCTFThor-s-a-hacker-now/</id>
-    <published>2021-09-05T08:21:42.000Z</published>
-    <updated>2021-09-05T09:50:42.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;将题目内容保存为1.txt,感觉是winhex里面类似的格式
-
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017第二届广东省强网杯线上赛Bubble</title>
-    <link href="http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/2017%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%BC%BA%E7%BD%91%E6%9D%AF%E7%BA%BF%E4%B8%8A%E8%B5%9BBubble/"/>
-    <id>http://example.com/2021/09/05/i%E6%98%A5%E7%A7%8B/2017%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%BC%BA%E7%BD%91%E6%9D%AF%E7%BA%BF%E4%B8%8A%E8%B5%9BBubble/</id>
-    <published>2021-09-05T08:13:53.000Z</published>
-    <updated>2021-09-05T09:50:20.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;Bubble Babble Encoding加密：是由Antti</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>misc web 爆破-3</title>
-    <link href="http://example.com/2021/09/03/i%E6%98%A5%E7%A7%8B/misc-web-%E7%88%86%E7%A0%B4-3/"/>
-    <id>http://example.com/2021/09/03/i%E6%98%A5%E7%A7%8B/misc-web-%E7%88%86%E7%A0%B4-3/</id>
-    <published>2021-09-03T02:51:54.000Z</published>
-    <updated>2021-09-05T09:50:54.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;源码：
-
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>羊城杯--easyphp</title>
-    <link href="http://example.com/2021/09/01/buuctf/web/%E7%BE%8A%E5%9F%8E%E6%9D%AF--easyphp%EF%BC%88%E6%9C%AA%E8%A7%A3%EF%BC%89/"/>
-    <id>http://example.com/2021/09/01/buuctf/web/%E7%BE%8A%E5%9F%8E%E6%9D%AF--easyphp%EF%BC%88%E6%9C%AA%E8%A7%A3%EF%BC%89/</id>
-    <published>2021-09-01T14:10:34.000Z</published>
-    <updated>2021-09-05T09:49:56.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>强网杯--随便注</title>
-    <link href="http://example.com/2021/08/29/buuctf/web/%E5%BC%BA%E7%BD%91%E6%9D%AF--%E9%9A%8F%E4%BE%BF%E6%B3%A8/"/>
-    <id>http://example.com/2021/08/29/buuctf/web/%E5%BC%BA%E7%BD%91%E6%9D%AF--%E9%9A%8F%E4%BE%BF%E6%B3%A8/</id>
-    <published>2021-08-29T12:24:06.000Z</published>
-    <updated>2021-09-05T09:48:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;输入1，发现有回显
-
-&lt;p&gt;&lt;img src=&quot;C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210726140245065.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>GXYCTF2019 Ping Ping Ping</title>
-    <link href="http://example.com/2021/08/12/buuctf/web/GXYCTF2019%20Ping%20Ping%20Ping/"/>
-    <id>http://example.com/2021/08/12/buuctf/web/GXYCTF2019%20Ping%20Ping%20Ping/</id>
-    <published>2021-08-12T07:50:41.000Z</published>
-    <updated>2021-09-05T09:45:58.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HCTF--WarmUp</title>
-    <link href="http://example.com/2021/08/10/buuctf/web/HCTF--WarmUp/"/>
-    <id>http://example.com/2021/08/10/buuctf/web/HCTF--WarmUp/</id>
-    <published>2021-08-10T06:37:22.000Z</published>
-    <updated>2021-09-05T09:46:12.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;p&gt;&lt;img src=&quot;C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210725222149430.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ACTF2020 新生赛 Exec</title>
-    <link href="http://example.com/2021/07/29/buuctf/web/ACTF2020%20%E6%96%B0%E7%94%9F%E8%B5%9B%20Exec/"/>
-    <id>http://example.com/2021/07/29/buuctf/web/ACTF2020%20%E6%96%B0%E7%94%9F%E8%B5%9B%20Exec/</id>
-    <published>2021-07-29T04:27:06.000Z</published>
-    <updated>2021-09-05T09:45:32.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;p&gt;&lt;img src=&quot;C:\Users\john\AppData\Roaming\Typora\typora-user-images\image-20210729122701760.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dvwa-6</title>
-    <link href="http://example.com/2021/03/20/dvwa/1%20(2)/"/>
-    <id>http://example.com/2021/03/20/dvwa/1%20(2)/</id>
-    <published>2021-03-20T01:38:06.000Z</published>
-    <updated>2021-03-20T01:38:08.000Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dvwa-6</title>
-    <link href="http://example.com/2021/03/20/dvwa/1%20(3)/"/>
-    <id>http://example.com/2021/03/20/dvwa/1%20(3)/</id>
-    <published>2021-03-20T01:38:06.000Z</published>
-    <updated>2021-03-20T01:38:08.000Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dvwa-6</title>
-    <link href="http://example.com/2021/03/20/dvwa/1%20(5)/"/>
-    <id>http://example.com/2021/03/20/dvwa/1%20(5)/</id>
-    <published>2021-03-20T01:38:06.000Z</published>
-    <updated>2021-03-20T01:38:08.000Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dvwa-6</title>
-    <link href="http://example.com/2021/03/20/dvwa/1%20(4)/"/>
-    <id>http://example.com/2021/03/20/dvwa/1%20(4)/</id>
-    <published>2021-03-20T01:38:06.000Z</published>
-    <updated>2021-03-20T01:38:08.000Z</updated>
-    
+    <summary type="html">&lt;h1 id=&quot;信息收集web-1-20&quot;&gt;&lt;a href=&quot;#信息收集web-1-20&quot; class=&quot;headerlink&quot; title=&quot;信息收集web 1~20&quot;&gt;&lt;/a&gt;信息收集web 1~20</summary>
     
     
     
