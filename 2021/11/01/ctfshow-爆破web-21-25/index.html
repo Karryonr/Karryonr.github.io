@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>ctfshow 爆破web 21~25 | Karryonr</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="web21(爆破什么的，都是基操)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ctfshow 爆破web 21~25">
+<meta property="og:url" content="http://example.com/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-25/index.html">
+<meta property="og:site_name" content="Karryonr">
+<meta property="og:description" content="web21(爆破什么的，都是基操)">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/Is7Et0.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IsLHo9.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IsLzLD.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IsXnc6.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/Iy86iD.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IyJk4S.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IyJV3Q.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IytdfO.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IytynA.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IyNwEq.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/13/IyUSG8.png">
+<meta property="article:published_time" content="2021-11-01T15:24:24.000Z">
+<meta property="article:modified_time" content="2021-11-14T04:18:03.316Z">
+<meta property="article:author" content="Karryonr">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z3.ax1x.com/2021/11/13/Is7Et0.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Karryonr" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://z3.ax1x.com/2021/11/01/IPWJqe.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-ctfshow-爆破web-21-25" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-25/" class="article-date">
+  	<time datetime="2021-11-01T15:24:24.000Z" itemprop="datePublished">2021-11-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ctfshow 爆破web 21~25
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="web21-爆破什么的，都是基操"><a href="#web21-爆破什么的，都是基操" class="headerlink" title="web21(爆破什么的，都是基操)"></a>web21(爆破什么的，都是基操)<span id="more"></span></h2><p>输入admin，密码随机，用burpsuit进行抓包</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Is7Et0"><img src="https://z3.ax1x.com/2021/11/13/Is7Et0.png" alt="Is7Et0.png"></a></p>
+<p>捕捉到报文</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IsLHo9"><img src="https://z3.ax1x.com/2021/11/13/IsLHo9.png" alt="IsLHo9.png"></a></p>
+<p>发现该字段解码为账号和密码</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IsLzLD"><img src="https://z3.ax1x.com/2021/11/13/IsLzLD.png" alt="IsLzLD.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IsXnc6"><img src="https://z3.ax1x.com/2021/11/13/IsXnc6.png" alt="IsXnc6.png"></a></p>
+<p>载入字典，对其进行爆破，在response可看到flag</p>
+<h2 id="web22-域名也可以爆破的，试试爆破这个ctf-show的子域名"><a href="#web22-域名也可以爆破的，试试爆破这个ctf-show的子域名" class="headerlink" title="web22(域名也可以爆破的，试试爆破这个ctf.show的子域名)"></a>web22(域名也可以爆破的，试试爆破这个<strong>ctf</strong>.show的子域名)</h2><p>登录<a target="_blank" rel="noopener" href="https://phpinfo.me/domain%EF%BC%8C%E8%BE%93%E5%85%A5**ctf**.show">https://phpinfo.me/domain，输入**ctf**.show</a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Iy86iD"><img src="https://z3.ax1x.com/2021/11/13/Iy86iD.png" alt="Iy86iD.png"></a></p>
+<p>在vip.<strong>ctf</strong>.show标签中可以看到flag</p>
+<h2 id="web23（还爆破？这么多代码，告辞！）"><a href="#web23（还爆破？这么多代码，告辞！）" class="headerlink" title="web23（还爆破？这么多代码，告辞！）"></a>web23（还爆破？这么多代码，告辞！）</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IyJk4S"><img src="https://z3.ax1x.com/2021/11/13/IyJk4S.png" alt="IyJk4S.png"></a></p>
+<p>需要传入参数token，对其进行MD5编码，符合两个if语句，编写脚本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"> for($i=0; $i&lt;10000; $i++)&#123;</span><br><span class="line">	$token=md5($i);</span><br><span class="line">	if(substr($token, 1,1)===substr($token, 14,1) &amp;&amp; substr($token, 14,1) ===substr($token, 17,1))&#123;</span><br><span class="line">        if((intval(substr($token, 1,1))+intval(substr($token, 14,1))+substr($token, 17,1))/substr($token, 1,1)===intval(substr($token, 31,1)))&#123;</span><br><span class="line">            echo &#x27;token =  &#x27;.$i.&#x27; md5=&#x27;.$token;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IyJV3Q"><img src="https://z3.ax1x.com/2021/11/13/IyJV3Q.png" alt="IyJV3Q.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://65b33fed-4937-4b23-8a9a-9acf9905f68f.challenge.ctf.show/?token=1202</span><br><span class="line">或者http://65b33fed-4937-4b23-8a9a-9acf9905f68f.challenge.ctf.show/?token=422</span><br></pre></td></tr></table></figure>
+
+<h2 id="web24（爆个🔨）"><a href="#web24（爆个🔨）" class="headerlink" title="web24（爆个🔨）"></a>web24（爆个🔨）</h2><p>编写脚本，根据题目修改PHP版本</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IytdfO"><img src="https://z3.ax1x.com/2021/11/13/IytdfO.png" alt="IytdfO.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">mt_srand(372619038);</span><br><span class="line">  echo intval(mt_rand());</span><br><span class="line">?&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IytynA"><img src="https://z3.ax1x.com/2021/11/13/IytynA.png" alt="IytynA.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://89e0efda-fc74-4932-abfd-854ef77fbcd6.challenge.ctf.show/?r=1155388967</span><br></pre></td></tr></table></figure>
+
+<h2 id="web25（爆个🔨，不爆了）"><a href="#web25（爆个🔨，不爆了）" class="headerlink" title="web25（爆个🔨，不爆了）"></a>web25（爆个🔨，不爆了）</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IyNwEq"><img src="https://z3.ax1x.com/2021/11/13/IyNwEq.png" alt="IyNwEq.png"></a></p>
+<p>当r=0,则rand=-mt_rand</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ec83baab-1e19-4d55-8e49-a85873e4f519.challenge.ctf.show/?r=0</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/IyUSG8"><img src="https://z3.ax1x.com/2021/11/13/IyUSG8.png" alt="IyUSG8.png"></a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/11/14/ctfshow-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96254-260/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          ctfshow-反序列化254~260
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/11/01/ctfshow%20%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86web%201~20/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ctfshow 信息收集web 1~20</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="ctfshow-爆破web-21-25" data-title="ctfshow 爆破web 21~25" data-url="http://example.com/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-25/"  data-images="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" data-content="ctfshow 爆破web 21~25">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2021 Karryonr
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

